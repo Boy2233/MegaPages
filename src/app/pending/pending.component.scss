@@ -1,0 +1,168 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+
+    .sub-main {
+        display: grid;
+        grid-gap: 10px;
+        padding: 20px;
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .group1 {
+                display: flex;
+
+                .h-box1 {
+                    display: flex;
+                    gap: 0.5rem;
+
+                    .h-box1-pending {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: red;
+                        width: 150px;
+                        height: 40px;
+                        border-radius: 10px;
+                    }
+
+                    .h-box1-complete {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba(128, 128, 128, 0.528);
+                        width: 150px;
+                        height: 40px;
+                        border-radius: 10px;
+                    }
+
+                    label {
+                        color: white;
+                    }
+                }
+
+                .h-box2 {
+                    margin-left: 50px;
+
+                    .h-box2-search {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 560px;
+
+                        input {
+                            border: 1px solid grey;
+                            outline: none;
+                            height: 40px;
+                            width: 450px;
+                            border-radius: 10px;
+                            padding: 0 10px;
+                        }
+
+                        span {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: red;
+                            border-radius: 10px;
+                            height: 40px;
+                            width: 70px;
+                            font-size: 30px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .h-box3 {
+                height: 40px;
+                display: flex;
+                align-items: center;
+
+                .h-box3-page {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    .label2 {
+                        height: 32px;
+                        display: flex;
+                        align-items: center;
+                        background-color: rgba(128, 128, 128, 0.528);
+                        border-radius: 5px;
+
+                        input {
+                            width: 20px;
+                            height: 30px;
+                            outline: none;
+                            border: none;
+                            padding: 0 5px;
+                            align-items: center;
+                            text-align: center;
+                            font-size: 15px;
+                        }
+
+                        span {
+                            display: flex;
+                            align-items: center;
+                            width: 20px;
+                            height: 30px;
+                        }
+                    }
+
+                    .label1,
+                    .label3 {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .body {
+
+            table,
+            th,
+            td {
+                border-collapse: collapse;
+                height: 50px;
+
+                th {
+                    height: 50px;
+                    text-align: left;
+                    background-color: rgba(128, 128, 128, 0.528);
+                }
+
+                #td-status {
+                    width: 15px;
+                    padding: 0 10px;
+                }
+
+                .status {
+                    width: 15px;
+                    height: 15px;
+                    background-color: red;
+                    border-radius: 20px;
+                }
+
+                .orange {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 20px;
+                    background-color: orange;
+                }
+            }
+
+            .note-green {
+                color: green;
+            }
+
+
+        }
+    }
+}
