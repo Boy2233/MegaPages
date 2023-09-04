@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PendingComponent } from './pending/pending.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/pending', pathMatch: 'full' },
 
   {
     path: 'pending',
